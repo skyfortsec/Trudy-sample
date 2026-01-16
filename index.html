@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome Trudy | Cloud4Future</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="nav">
+    <div class="brand">
+      <div class="logo">C4F</div>
+      <div class="brand-text">
+        <div class="brand-name">Cloud4Future</div>
+        <div class="brand-tag">Build • Secure • Scale</div>
+      </div>
+    </div>
+    <a class="cta" href="#gallery">View Gallery</a>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <p class="pill">✨ New Member Spotlight</p>
+
+        <h1 class="title">
+          Welcome <span class="accent">Trudy</span> to <span class="accent">Cloud4Future</span>.
+        </h1>
+
+        <p class="subtitle">
+          A Little Progress everyday adds up to Big Result.
+        </p>
+
+        <div class="buttons">
+          <a class="btn primary" href="#message">Send a Welcome</a>
+          <a class="btn ghost" href="#gallery">Explore Images</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">365</div>
+            <div class="stat-label">Days of Growth</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">1%</div>
+            <div class="stat-label">Progress Daily</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">∞</div>
+            <div class="stat-label">Future Potential</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <img
+            class="hero-img"
+            alt="Cloud computing landscape"
+            src="https://images.unsplash.com/photo-1451186859696-371d9477be93?auto=format&fit=crop&w=1400&q=80"
+          />
+          <div class="hero-overlay">
+            <div class="hero-overlay-title">Cloud4Future</div>
+            <div class="hero-overlay-sub">Welcome Journey Begins</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="section-head">
+        <h2>Beautiful Inspiration</h2>
+        <p>Modern cloud vibes, future-ready energy, and daily progress.</p>
+      </div>
+
+      <div class="grid">
+        <figure class="tile">
+          <img
+            alt="Cloud architecture concept"
+            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80"
+          />
+          <figcaption>Secure foundations</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img
+            alt="Team collaboration"
+            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80"
+          />
+          <figcaption>Learn together</figcaption>
+        </figure>
+
+        <figure class="tile">
+          <img
+            alt="Data center lights"
+            src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+          />
+          <figcaption>Scale with confidence</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="message" class="message">
+      <div class="message-card">
+        <h3>Welcome Note</h3>
+        <p>
+          Trudy, we’re excited to have you here. Keep showing up, keep learning,
+          and keep building — your future is bright at Cloud4Future.
+        </p>
+
+        <form class="form" onsubmit="return false;">
+          <label>
+            Your welcome message
+            <textarea id="welcomeText" rows="4" placeholder="Write something kind..."></textarea>
+          </label>
+          <button class="btn primary" id="copyBtn" type="button">Copy Message</button>
+          <p class="hint" id="hint"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Cloud4Future • Made with ❤️ for Trudy</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

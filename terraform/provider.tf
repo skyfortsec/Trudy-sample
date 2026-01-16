@@ -1,5 +1,11 @@
 terraform {
+  backend "gcs" {
+    bucket  = "tfstate-gke-deployment-484513"
+    prefix = "trudy-website"
+  }
+
   required_version = ">= 1.5.0"
+
   required_providers {
     google = {
       source  = "hashicorp/google"
@@ -13,3 +19,4 @@ provider "google" {
   region  = var.region
   zone    = var.zone
 }
+
